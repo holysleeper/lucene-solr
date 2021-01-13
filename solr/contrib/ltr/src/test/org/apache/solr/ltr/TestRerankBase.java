@@ -270,7 +270,7 @@ public class TestRerankBase extends RestTestBase {
   protected static void loadFeature(String name, String type, String params)
       throws Exception {
     final String feature = getFeatureInJson(name, type, "test", params);
-    log.info("loading feauture \n{} ", feature);
+    log.info("loading feature \n{} ", feature);
     assertJPut(ManagedFeatureStore.REST_END_POINT, feature,
         "/responseHeader/status==0");
   }
@@ -278,7 +278,7 @@ public class TestRerankBase extends RestTestBase {
   protected static void loadFeature(String name, String type, String fstore,
       String params) throws Exception {
     final String feature = getFeatureInJson(name, type, fstore, params);
-    log.info("loading feauture \n{} ", feature);
+    log.info("loading feature \n{} ", feature);
     assertJPut(ManagedFeatureStore.REST_END_POINT, feature,
         "/responseHeader/status==0");
   }
